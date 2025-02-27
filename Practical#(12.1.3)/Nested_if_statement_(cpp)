@@ -1,0 +1,40 @@
+ #include <iostream>
+using namespace std;
+
+int main() {
+    int Maths, English, Biology;
+    cout << "Enter your marks" << endl;
+
+    cout << "Maths \t";
+    cin >> Maths;
+
+    cout << "English \t";
+    cin >> English;
+
+    cout << "Biology \t";
+    cin >> Biology;
+
+    int totalMarks = Maths + English + Biology;
+    int totalPossibleMarks = 300; // Total possible marks
+    int percentage = (totalMarks * 100) / totalPossibleMarks;
+
+    cout << "Your gain marks: " << totalMarks << endl;
+    cout << "Your percentage is: " << percentage << "%" << endl;
+
+    if (percentage >= 40) {
+        cout << "Pass" << endl;
+        if (percentage >= 40 && percentage < 50) {
+            cout << "Grade: C" << endl;
+        }
+        else if (percentage >= 50 && percentage < 60) {
+            cout << "Grade: B" << endl;
+        }
+        else if (percentage >= 60) {
+            cout << "Grade: A" << endl;
+        }
+    } else {
+        cout << "Fail" << endl;
+    }
+
+    return 0;
+}
