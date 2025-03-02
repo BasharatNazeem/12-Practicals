@@ -1,0 +1,30 @@
+#include<iostream>
+using namespace std;
+int main(){
+	double rad, areacircle,areatriangle,areaparalellogram;
+	double pi = 3.14;
+	cout<<"Enter value of radius ";
+	cin>>rad;
+	areacircle=rad*rad*pi;
+	cout<<"the area of circle is "<<areacircle;
+	
+	float len, hei;
+	cout<<endl<<endl<<"area of TRIANGLR: "<<endl;
+	cout<<"enter value of length ";
+	cin>>len;
+	cout<<"enter value of height ";
+	cin>>hei;
+	areatriangle= 0.5* len* hei;
+	cout<<"the area of triangle is "<<areatriangle;
+	cout<<endl<<endl;
+	
+	cout<<"area of PARALELLOGRAM: "<<endl;
+	float length, height;
+	cout<<"enter the value of length ";
+	cin>>length;
+	cout<<"height ";
+	cin>>height;
+	areaparalellogram= length*height;
+	cout<<"area of paralelogram is "<<areaparalellogram;
+	
+}
