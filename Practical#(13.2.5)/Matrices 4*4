@@ -1,0 +1,76 @@
+#include<iostream>
+using namespace std;
+int main(){
+ 	cout<<endl;
+	int m1[4][4], m2[4][4],add[4][4],sub[4][4],mul[4][4];
+	 
+	 for(int i=0; i<4; i++){
+	 	for(int k=0; k<4; k++){
+	 		cout<<"enter value for M1 ";
+	 		cin>>m1[i][k];
+		 }
+	 }
+	cout<<endl<<endl;
+	cout<<"MATRICE 1:"<<endl;
+	for(int i=0; i<4; i++){
+	 	for(int k=0; k<4; k++){
+	 		cout<<m1[i][k];
+		 }
+		 cout<<endl;
+	 }
+	 cout<<endl;
+	 
+	 for(int i=0; i<4; i++){
+	 	for(int k=0; k<4; k++){
+	 		cout<<"enter value for M2 ";
+	 		cin>>m2[i][k];
+		 }
+	 }
+	 
+	 cout<<endl<<endl<<"MARTICE 2:"<<endl;
+	for(int i=0; i<4; i++){
+	 	for(int k=0; k<4; k++){
+	 		cout<<m2[i][k];
+		 }
+		 cout<<endl;
+	 }
+	 cout<<endl<<endl<<"ADDITION OF M1 AND M2:"<<endl;
+	
+	for(int i=0; i<4; i++){
+	 	for(int k=0; k<4; k++){
+	 		add[i][k]= m1[i][k]+m2[i][k];
+	 		cout<<add[i][k];
+		 }
+		 cout<<endl;
+		 
+	 }
+	
+	 
+	 cout<<endl<<endl<<"SUBTRACTION OF M1 AND M2"<<endl;
+	 for(int i=0; i<4; i++){
+	 	for(int k=0; k<4; k++){
+	 		sub[i][k]= m1[i][k]-m2[i][k];
+	 		cout<<sub[i][k];
+		 }
+		 cout<<endl;
+		 
+	 }
+	int sum;
+	cout<<endl<<endl<<"MULTIPLICATION OF M1 AND M2"<<endl;
+	for(int i=0; i<4; i++){
+	 	for(int j=0; j<4; j++){
+	 		sum=0;
+	 		for(int k=0; k<4; k++){
+	 		sum += m1[i][k]* m2[k][j];
+	 		mul[i][j]= sum;
+            
+	 	}
+	 	cout<<mul[i][j]<<" ";
+	 	
+		 }
+		 cout<<endl;
+		 
+	 }
+	
+	
+}
