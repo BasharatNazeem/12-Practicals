@@ -1,0 +1,17 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+int main(){
+	char x[20], y[20], dist[20];
+	int a;
+	cout<<"enter your name: ";
+	cin.getline(x,20);
+	strcpy(dist, x);
+	a=strlen(dist);
+	cout<<"Your first name has "<<a<<" characters";
+	cout<<endl<<"enter your second name ";
+	cin.getline(y,20);
+	strcat(x,y);
+	cout<<endl<<x<<" is your full name";
+	
+}
