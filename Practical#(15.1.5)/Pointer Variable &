@@ -1,0 +1,16 @@
+#include <iostream>
+
+using namespace std ;
+
+int main(){
+    int x = 18 ;
+    int *xPointer ;
+
+    xPointer = &x ;
+
+    cout << "\nThe value of x is :\t"<< x ;
+    cout << "\nThe address of variable x is :\t"<< &x ;
+    cout << "\nThe value of xPointer is :\t"<< xPointer ;
+
+
+}
