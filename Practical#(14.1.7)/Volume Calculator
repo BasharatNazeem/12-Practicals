@@ -1,71 +1,41 @@
+#include<iostream>
+#include<cmath>
+using namespace std;
 
-
-#include <iostream>
-using namespace std ;
-
-float volumeOfCylinder(){
-    float radius ;
-    float height ;
-
-    cout <<"\n\nEnter radius of the cylinder : ";
-    cin >> radius ;
-
-    cout << "Enter height of the cylinder : ";
-    cin >> height ;
-
-    float volume = 3.14 * (radius*radius)*height ;
-
-    cout << "\n\nThe volume of the cylinder is : " << volume ;
-
+double vol(double r,double h){
+    return M_PI*(r*r)*h;
 }
 
-float volumeOfSphere(){
-    float radius ;
-
-    cout <<"\n\nEnter radius of the Sphere : ";
-    cin >> radius ;
-
-    float volume = (4/3)*3.14*(radius*radius*radius);
-
-    cout << "\n\nThe volume of the Sphere is : " << volume ;
-
-
+double vols(double R){
+    return (4/3)*M_PI*(R*R*R);
 }
 
-float volumeOfCube(){
-
-    float side ;
-
-    cout << "\n\nEnter the lenght of a side of of the cube : ";
-    cin >> side;
-
-    float volume = side*side*side;
-
-    cout << "\n\nThe volume of the cube is : " << volume;
-
-
+double volc(double a){
+    return a*a*a;
 }
 
-int main (){
 
-    int option;
-
-    cout << "Please Select any option : \n\n1. Volume of Cylinder\n2. Volume of Sphere \n3. Volume of cube \n>>> ";
-    cin >> option;
-
-    if (option == 1){
-        volumeOfCylinder();
-    }
-    else if (option == 2){
-        volumeOfSphere();
-    }
-    else if (option == 3){
-        volumeOfCube();
-    }
-    else {
-        cout << "\n\nError please try again";
-    }
-
-
-    return 0 ;
+int main(){
+    double r,h;
+    cout<<"Radius of cylinder = ";
+    cin>>r;
+    cout<<"height of cylinder = ";
+    cin>>h;
+    cout<<vol(r,h)<<"\n\n\n";
+    
+    
+    double R;
+    cout<<"Radius of sphere = ";
+    cin>>R;
+    cout<<"Voulume of sphere is = "<<vols(R)<<"\n\n\n";
+    
+    
+    double a;
+    cout<<"enter value of one any side of cube = ";
+    cin>>a;
+    cout<<"volume of cube is "<<volc(a);
+    
+    
+    
+    
 }
