@@ -1,24 +1,30 @@
 #include<iostream>
-#include<cmath>
 using namespace std;
+int add(int a, int b){
+    return a+b;
+}
+int sub(int a,int b){
+    return a-b;
+}
+
+int mul(int a,int b){
+    return a*b;
+}
+
+int diV(int a,int b){
+    return a/b;
+}
+
+
 int main(){
-	float a,b;
-	cout<<"Enter value for a"<<endl;
-	cin>>a;
-	cout<<"Enter value for b"<<endl;
-	cin>>b;
-	
-	int add,sub,mul; 
-	float div;
-	add=a+b;
-	sub=a-b;
-	mul=a*b;
-	div=a/b;
-	
-	cout<<"BY ADDING A AND B WE GET "<<add<<endl;
-	cout<<"BY SUBTRACTIONG A AND B WE GET "<<sub<<endl;
-	cout<<"BY MULTIPLYING A AND B WE GET "<<mul<<endl;
-	cout<<"BY DIVIDING A AND B WE GET "<<div<<endl;
-	
-	
+    int a,b,c;
+    cout<<"enter a value for a ";
+    cin>>a;
+    cout<<"b: ";
+    cin>>b;
+    cout<<"addition= "<<add(a,b)<<endl;
+    cout<<"subbtraction= "<<sub(a,b)<<endl;
+    cout<<"multiplication= "<<mul(a,b)<<endl;
+    cout<<"division= "<<diV(a,b)<<endl;
+    
 }
